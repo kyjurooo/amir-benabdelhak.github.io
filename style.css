@@ -574,6 +574,31 @@ ul { list-style: none; }
   align-items: start;
 }
 
+.interest-card.featured.reverse {
+  grid-template-columns: 1fr 280px;
+}
+
+.interest-card.featured.reverse .interest-img-wrap {
+  order: 2;
+}
+
+.interest-card.featured.reverse .interest-content {
+  order: 1;
+}
+
+.travels-text {
+  max-width: 1100px;
+  margin: 0 auto 2.5rem;
+  padding: 0 2.5rem;
+}
+
+.travels-text p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+
 .interest-img-wrap {
   height: 220px;
   border-radius: var(--radius);
