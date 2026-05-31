@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Amir Benabdelhak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">AB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <section class="page-hero">
+    <span class="section-tag">Restons en contact</span>
+    <h1>Me contacter</h1>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <h2>Parlons-en</h2>
+        <p>Que vous soyez recruteur, enseignant, ou simplement curieux de mon parcours — n'hésitez pas à me contacter. Je réponds sous 48h.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:amir.benabdelhak30@gmail.com">amir.benabdelhak30@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">in</span>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="https://www.linkedin.com/in/amir-benabdelhak-24921a3b7/" target="_blank">Amir Benabdelhak</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Localisation</strong>
+              <span>Île-de-France</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🎓</span>
+            <div>
+              <strong>Formation</strong>
+              <span>BUT Carrières Juridiques — IUT Villetaneuse</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Nom & Prénom</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="objet">Objet</label>
+            <select id="objet" name="objet">
+              <option value="">Sélectionner</option>
+              <option value="recrutement">Opportunité professionnelle</option>
+              <option value="stage">Proposition de stage</option>
+              <option value="formation">Informations formation</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Envoyer le message</button>
+          <p class="form-note">Ce formulaire ouvre votre client mail. Vous pouvez aussi m'écrire directement à <a href="mailto:amir.benabdelhak30@gmail.com">amir.benabdelhak30@gmail.com</a></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Amir Benabdelhak · <a href="mailto:amir.benabdelhak30@gmail.com">amir.benabdelhak30@gmail.com</a> · <a href="https://www.linkedin.com/in/amir-benabdelhak-24921a3b7/" target="_blank">LinkedIn</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

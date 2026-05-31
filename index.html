@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amir Benabdelhak — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">AB</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <img src="images/photo_pro.jpg" alt="Amir Benabdelhak" class="hero-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="photo-placeholder" style="display:none">AB</div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">Portfolio</p>
+        <h1 class="hero-name">Amir<br><em>Benabdelhak</em></h1>
+        <p class="hero-subtitle">Étudiant en BUT Carrières Juridiques<br>Parcours Patrimoine & Finance · IUT Villetaneuse</p>
+        <p class="hero-desc">Passionné par le droit des collectivités, la gouvernance territoriale et le droit du numérique. Deux stages au service juridique de la CCPOH, une expérience de terrain rare dès la formation initiale.</p>
+        <div class="hero-cta">
+          <a href="projets.html" class="btn-primary">Voir mes projets</a>
+          <a href="contact.html" class="btn-secondary">Me contacter</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">↓</div>
+  </section>
+
+  <!-- CHIFFRES CLÉS -->
+  <section class="stats">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Stages en collectivité territoriale</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">17</span>
+        <span class="stat-label">Communes couvertes par l'EPCI</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">17,33</span>
+        <span class="stat-label">Note SAÉ S5 — Cas Romanet</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">14,1</span>
+        <span class="stat-label">Moyenne Baccalauréat — Mention Bien</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- APERÇU MISSIONS -->
+  <section class="missions-preview">
+    <div class="section-header">
+      <span class="section-tag">Expérience terrain</span>
+      <h2>Ce que j'ai fait concrètement</h2>
+    </div>
+    <div class="missions-grid">
+      <div class="mission-card">
+        <span class="mission-icon">⚖️</span>
+        <h3>Gouvernance intercommunale</h3>
+        <p>Rédaction des actes fondateurs de la mandature 2026 : conférence des maires, pacte de gouvernance, règlement intérieur du conseil communautaire.</p>
+      </div>
+      <div class="mission-card">
+        <span class="mission-icon">🏛️</span>
+        <h3>Droit des collectivités</h3>
+        <p>Transferts de pouvoirs de police spéciale aux 17 maires (art. L.5211-9-2 CGCT), délibérations, courriers officiels aux élus.</p>
+      </div>
+      <div class="mission-card">
+        <span class="mission-icon">📋</span>
+        <h3>Commande publique</h3>
+        <p>Analyse de CCTP, intégration des obligations environnementales (loi AGEC, loi Climat et Résilience) dans les marchés publics d'une intercommunalité.</p>
+      </div>
+      <div class="mission-card">
+        <span class="mission-icon">💼</span>
+        <h3>Ingénierie patrimoniale</h3>
+        <p>SAÉ S5 — Cas Romanet : diagnostic financier d'une SARL, structuration d'une holding familiale, stratégie fiscale et transmission via Pacte Dutreil. Note : 17,33/20.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Amir Benabdelhak · <a href="mailto:amir.benabdelhak30@gmail.com">amir.benabdelhak30@gmail.com</a> · <a href="https://www.linkedin.com/in/amir-benabdelhak-24921a3b7/" target="_blank">LinkedIn</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

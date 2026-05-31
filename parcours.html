@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcours — Amir Benabdelhak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">AB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="parcours.html" class="active">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <section class="page-hero">
+    <span class="section-tag">Formation & Expériences</span>
+    <h1>Mon parcours</h1>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section">
+    <div class="timeline">
+
+      <!-- FORMATION -->
+      <div class="timeline-block left">
+        <div class="timeline-dot education"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">2020 – 2023</span>
+          <span class="timeline-type">Formation</span>
+          <h3>Baccalauréat Général</h3>
+          <h4>Lycée Hugues Capet — Senlis (60)</h4>
+          <p>Spécialités : Histoire-Géographie Géopolitique & Sciences Politiques (17/20), Sciences Économiques et Sociales (18/20). Moyenne finale 14,1 — <strong>Mention Bien</strong>.</p>
+          <p>Un bac ancré dans les sciences humaines et sociales, qui a posé les bases d'une approche analytique du droit et des institutions.</p>
+          <div class="timeline-tags">
+            <span>SES</span><span>HGGSP</span><span>Mention Bien</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-block right">
+        <div class="timeline-dot education"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">2023 – 2026</span>
+          <span class="timeline-type">Formation supérieure</span>
+          <h3>BUT Carrières Juridiques</h3>
+          <h4>IUT de Villetaneuse — Université Sorbonne Paris Nord</h4>
+          <p>Parcours <strong>Patrimoine & Finance</strong>. Formation en trois ans articulant droit privé, droit public, fiscalité, analyse financière et ingénierie patrimoniale. Encadrement par SAÉ (Situations d'Apprentissage et d'Évaluation) sur des cas réels.</p>
+          <p>J'ai choisi le BUT pour son encadrement structuré, la diversité des débouchés et les SAÉ qui imposent une pratique concrète du droit dès la première année.</p>
+          <div class="timeline-tags">
+            <span>Droit des contrats</span><span>Droit fiscal</span><span>Analyse financière</span><span>Droit patrimonial</span><span>Droit du numérique</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGES -->
+      <div class="timeline-block left">
+        <div class="timeline-dot internship"></div>
+        <div class="timeline-card highlight">
+          <span class="timeline-date">Mars – Juin 2025</span>
+          <span class="timeline-type">Stage BUT 2</span>
+          <h3>Service juridique — CCPOH</h3>
+          <h4>Communauté de Communes des Pays d'Oise et d'Halatte · Pont-Sainte-Maxence (60)</h4>
+          <p>Premier stage au sein du service juridique et de la commande publique de la CCPOH, un EPCI (Établissement Public de Coopération Intercommunale) regroupant 17 communes et environ 35 000 habitants.</p>
+          <ul class="timeline-missions">
+            <li>Analyse et intégration des obligations environnementales issues de la loi AGEC (loi anti-gaspillage pour une économie circulaire) et de la loi Climat et Résilience dans les marchés publics</li>
+            <li>Benchmark auprès d'autres collectivités sur l'intégration des clauses environnementales</li>
+            <li>Rédaction de projets de délibérations et suivi d'actes juridiques</li>
+            <li>Découverte du fonctionnement d'un EPCI et de ses procédures de commande publique</li>
+          </ul>
+          <div class="timeline-tags">
+            <span>Commande publique</span><span>Loi AGEC</span><span>Délibérations</span><span>Droit de l'environnement</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-block right">
+        <div class="timeline-dot internship"></div>
+        <div class="timeline-card highlight">
+          <span class="timeline-date">Mars – Juin 2026</span>
+          <span class="timeline-type">Stage BUT 3</span>
+          <h3>Service juridique — CCPOH</h3>
+          <h4>Communauté de Communes des Pays d'Oise et d'Halatte · Pont-Sainte-Maxence (60)</h4>
+          <p>Retour dans la même structure pour un stage de troisième année dans un contexte institutionnel exceptionnel : le renouvellement de mandature consécutif aux élections municipales de mars 2026. Missions nettement plus complexes, portant sur la gouvernance institutionnelle et la refondation des instruments juridiques internes de l'EPCI.</p>
+          <ul class="timeline-missions">
+            <li>Rédaction de la note de synthèse et du projet de délibération instituant la Conférence des maires (art. L.5211-11-3 CGCT)</li>
+            <li>Rédaction du projet de délibération approuvant le Pacte de gouvernance (art. L.5211-11-2 CGCT)</li>
+            <li>Rédaction du courrier et du formulaire d'opposition adressés aux 17 maires concernant les transferts de pouvoirs de police spéciale (art. L.5211-9-2 CGCT)</li>
+            <li>Révision complète du règlement intérieur du conseil communautaire (2020 → mandature 2026)</li>
+            <li>Analyse de CCTP pour un logiciel petite enfance dans le cadre d'une procédure de commande publique</li>
+          </ul>
+          <div class="timeline-tags">
+            <span>Gouvernance intercommunale</span><span>CGCT</span><span>Mandature 2026</span><span>Délibérations</span><span>Police spéciale</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERSPECTIVE -->
+      <div class="timeline-block left">
+        <div class="timeline-dot future"></div>
+        <div class="timeline-card future-card">
+          <span class="timeline-date">À venir</span>
+          <span class="timeline-type">Projet</span>
+          <h3>Master — Droit du numérique</h3>
+          <h4>En cours de candidature</h4>
+          <p>Après trois ans d'immersion dans le droit public et la pratique territoriale, je souhaite me spécialiser dans le droit du numérique — un domaine que j'ai abordé en formation (Ressource R2.06) et qui me semble être l'un des champs juridiques les plus dynamiques aujourd'hui. La régulation des plateformes, la protection des données, la responsabilité des algorithmes : autant de sujets qui mobilisent des compétences transversales que j'ai construites en BUT.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Amir Benabdelhak · <a href="mailto:amir.benabdelhak30@gmail.com">amir.benabdelhak30@gmail.com</a> · <a href="https://www.linkedin.com/in/amir-benabdelhak-24921a3b7/" target="_blank">LinkedIn</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos — Amir Benabdelhak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">AB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="apropos.html" class="active">À propos</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <section class="page-hero">
+    <span class="section-tag">Qui suis-je</span>
+    <h1>À propos</h1>
+  </section>
+
+  <!-- INTRO -->
+  <section class="about-intro">
+    <div class="about-grid">
+      <div class="about-photo-col">
+        <img src="images/photo_pro.jpg" alt="Amir Benabdelhak" class="about-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="photo-placeholder large" style="display:none">AB</div>
+        <div class="about-links">
+          <a href="mailto:amir.benabdelhak30@gmail.com" class="about-link">✉ amir.benabdelhak30@gmail.com</a>
+          <a href="https://www.linkedin.com/in/amir-benabdelhak-24921a3b7/" target="_blank" class="about-link">in LinkedIn</a>
+        </div>
+      </div>
+      <div class="about-text-col">
+        <h2>Amir Benabdelhak</h2>
+        <p class="about-tagline"><em>Étudiant en droit, curieux de tout, passionné par les grandes histoires.</em></p>
+        <p>Je suis étudiant en troisième année de BUT Carrières Juridiques, parcours Patrimoine et Finance, à l'IUT de Villetaneuse (Université Sorbonne Paris Nord). Mon parcours est marqué par une expérience terrain inhabituelle pour un étudiant en formation initiale : deux stages consécutifs dans le même Établissement Public de Coopération Intercommunale, la CCPOH à Pont-Sainte-Maxence, ce qui m'a permis de construire une vraie connaissance institutionnelle et de progresser d'une année sur l'autre.</p>
+        <p>Je m'oriente vers le droit du numérique pour la suite de mes études — un domaine que j'ai découvert en formation et qui me semble être l'un des terrains juridiques les plus mouvants et stimulants du moment. Ce que j'aime dans le droit, c'est justement ce qu'il partage avec mes autres passions : la complexité des systèmes, les décisions qui ont des conséquences réelles, et les histoires humaines derrière les textes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOYAGES -->
+  <section class="travels">
+    <div class="section-header">
+      <span class="section-tag">Voyages</span>
+      <h2>Voir le monde autrement</h2>
+    </div>
+    <p class="section-intro">Voyager, c'est pour moi la meilleure façon de sortir de ses cadres de référence. Le Japon et la Malaisie ont été des expériences radicalement différentes — deux façons d'aborder l'espace, le temps, et les gens.</p>
+    <div class="travel-grid">
+      <div class="travel-card wide">
+        <img src="images/japon_shibuya.jpg" alt="Shibuya, Tokyo" onerror="this.style.background='#1a1a2e'; this.alt='Tokyo - Shibuya'">
+        <div class="travel-overlay">
+          <h3>Japon — Tokyo</h3>
+          <p>Shibuya, Asakusa, l'hypermodernité et le temple côte à côte. Une ville où la tradition et le futur coexistent sans se contredire.</p>
+        </div>
+      </div>
+      <div class="travel-card">
+        <img src="images/japon_temple.jpg" alt="Temple Senso-ji, Tokyo" onerror="this.style.background='#2d1b00'">
+        <div class="travel-overlay">
+          <h3>Senso-ji de nuit</h3>
+          <p>Asakusa après minuit. Un silence inhabituellement précieux dans cette ville qui ne dort pas.</p>
+        </div>
+      </div>
+      <div class="travel-card">
+        <img src="images/malaisie.jpg" alt="Batu Caves, Kuala Lumpur" onerror="this.style.background='#1a3a1a'">
+        <div class="travel-overlay">
+          <h3>Malaisie — Batu Caves</h3>
+          <p>Kuala Lumpur et ses Batu Caves, un melting-pot culturel fascinant entre Asie du Sud-Est et influences indiennes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENTRES D'INTÉRÊT -->
+  <section class="interests">
+    <div class="section-header">
+      <span class="section-tag">Ce qui me fait vibrer</span>
+      <h2>Au-delà du droit</h2>
+    </div>
+    <div class="interests-grid">
+
+      <div class="interest-card featured">
+        <div class="interest-img-wrap">
+          <img src="images/cinema.jpg" alt="Cinéma" onerror="this.parentElement.style.background='#0d0d0d'">
+        </div>
+        <div class="interest-content">
+          <span class="interest-tag">Passion n°1</span>
+          <h3>Le Septième Art</h3>
+          <p>Le cinéma est sans doute ma passion la plus ancienne. Je fréquente régulièrement les salles indépendantes parisiennes — moins pour suivre l'actualité des sorties que pour explorer : un réalisateur, une époque, un genre. J'ai un abonnement et j'y vais souvent, parfois au hasard. C'est d'ailleurs en choisissant une séance au dernier moment que j'ai découvert Hitchcock et ses <em>39 Marches</em> — une révélation.</p>
+          <p>J'ai une affection particulière pour Clouzot et le cinéma français classique (<em>Le Salaire de la peur</em> reste l'un de mes films préférés), et pour Scorsese — pas seulement pour ses films de gangsters, mais pour sa façon de construire des personnages dont on ne peut pas se défaire.</p>
+          <div class="interest-tags">
+            <span>Clouzot</span><span>Scorsese</span><span>Hitchcock</span><span>Cinémas indépendants</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="interest-card">
+        <span class="interest-emoji">🎮</span>
+        <h3>Jeux vidéo & narration</h3>
+        <p>Ce qui m'attire dans les jeux vidéo, c'est la même chose que dans les séries et le cinéma : les grandes histoires, les personnages dans lesquels on s'immerge. La différence, c'est qu'on est directement impliqué — on <em>est</em> le personnage. Ce mur brisé entre spectateur et acteur, c'est ce que je trouve unique dans ce médium. Je suis particulièrement attiré par les récits longs et denses.</p>
+      </div>
+
+      <div class="interest-card">
+        <span class="interest-emoji">🏃</span>
+        <h3>Sport</h3>
+        <p>Le sport fait partie de ma semaine de façon quasi-obligatoire — c'est autant une question d'équilibre mental que physique. Dépenser de l'énergie régulièrement, c'est non négociable pour moi.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Amir Benabdelhak · <a href="mailto:amir.benabdelhak30@gmail.com">amir.benabdelhak30@gmail.com</a> · <a href="https://www.linkedin.com/in/amir-benabdelhak-24921a3b7/" target="_blank">LinkedIn</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
